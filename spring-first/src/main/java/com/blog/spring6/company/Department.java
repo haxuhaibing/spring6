@@ -2,15 +2,15 @@ package com.blog.spring6.company;
 
 public class Department {
 
-    private String name;
+    private String dname;
     private int age;
 
-    public String getName() {
-        return name;
+    public String getDname() {
+        return dname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDname(String dname) {
+        this.dname = dname;
     }
 
     public int getAge() {

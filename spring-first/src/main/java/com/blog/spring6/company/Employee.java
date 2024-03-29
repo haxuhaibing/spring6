@@ -31,7 +31,7 @@ public class Employee {
     }
 
     public void work(){
-        System.out.println("员工姓名:"+name+" 员工年龄:"+age+" 部门名称："+department.getName());
+        System.out.println("员工姓名:"+name+" 员工年龄:"+age+" 部门名称："+department.getDname());
         department.info();
     }
 }

@@ -5,11 +5,24 @@
 
     <!--1.外部引用-->
     <bean id="department" class="com.blog.spring6.company.Department">
-      <property name="name" value="前端"></property>
+      <property name="dname" value="前端"></property>
     </bean>
     <bean id="employee" class="com.blog.spring6.company.Employee">
         <property name="name" value="xuhaibing"></property>
         <property name="age" value="18"></property>
         <property name="department" ref="department" ></property>
+    </bean>
+
+    <!--2.内部bean-->
+
+    <bean id="employee2" class="com.blog.spring6.company.Employee">
+        <property name="name" value="tom"></property>
+        <property name="age" value="18"></property>
+        <!--内部bean-->
+        <property name="department">
+            <bean id="department2" class="com.blog.spring6.company.Department">
+                <property name="dname" value="后端"></property>
+            </bean>
+        </property>
     </bean>
 </beans>
