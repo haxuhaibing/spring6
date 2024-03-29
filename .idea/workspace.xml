@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0cc7fac-2e1e-4c84-9bb0-b42e96c80bb8" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-first/src/main/java/com/blog/spring6/company/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-first/src/main/java/com/blog/spring6/company/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-first/src/main/java/com/blog/spring6/company/TestCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-first/src/main/java/com/blog/spring6/company/TestCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-first/src/main/resources/bean-company.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-first/src/main/resources/bean-company.xml" afterDir="false" />
     </list>
@@ -150,7 +149,7 @@
       <workItem from="1711523072934" duration="17000" />
       <workItem from="1711523100241" duration="1539000" />
       <workItem from="1711608996730" duration="111000" />
-      <workItem from="1711609120259" duration="3989000" />
+      <workItem from="1711609120259" duration="4334000" />
     </task>
     <servers />
   </component>
