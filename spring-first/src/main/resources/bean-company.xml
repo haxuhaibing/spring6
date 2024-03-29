@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1.外部引用-->
+    <bean id="department" class="com.blog.spring6.company.Department">
+      <property name="name" value="前端"></property>
+    </bean>
+    <bean id="employee" class="com.blog.spring6.company.Employee">
+        <property name="name" value="xuhaibing"></property>
+        <property name="age" value="18"></property>
+        <property name="department" ref="department" ></property>
+    </bean>
+</beans>
