@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="department" class="com.blog.spring6.company.Department">
+        <property name="dname" value="设计部"></property>
+
+        <property name="employeeList">
+            <list>
+                <ref bean="employee1"></ref>
+                <ref bean="employee2"></ref>
+            </list>
+        </property>
+    </bean>
+    <bean id="employee1" class="com.blog.spring6.company.Employee">
+        <property name="name" value="joon"></property>
+        <property name="age" value="23"></property>
+        <property name="loves">
+            <array>
+                <value>吃饭</value>
+                <value>唱歌</value>
+            </array>
+        </property>
+        <property name="department" ref="department"></property>
+        <property name="department.dname" value="测试部"></property>
+
+    </bean>
+
+    <bean id="employee2" class="com.blog.spring6.company.Employee">
+        <property name="name" value="joon2"></property>
+        <property name="age" value="232"></property>
+        <property name="loves">
+            <array>
+                <value>吃饭2</value>
+                <value>唱歌2</value>
+            </array>
+        </property>
+        <property name="department" ref="department"></property>
+        <property name="department.dname" value="测试部2"></property>
+
+    </bean>
+</beans>
