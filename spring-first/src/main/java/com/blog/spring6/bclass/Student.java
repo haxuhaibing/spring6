@@ -1,12 +1,14 @@
 package com.blog.spring6.bclass;
 
+import java.util.List;
 import java.util.Map;
 
 public class Student {
     private String sid;
     private String sname;
 
-    private Map<String,Teacher> teacherMap;
+    private Map<String, Teacher> teacherMap;
+    private List<Lesson> lessonList;
 
     public Map<String, Teacher> getTeacherMap() {
         return teacherMap;
@@ -14,6 +16,14 @@ public class Student {
 
     public void setTeacherMap(Map<String, Teacher> teacherMap) {
         this.teacherMap = teacherMap;
+    }
+
+    public List<Lesson> getLessonList() {
+        return lessonList;
+    }
+
+    public void setLessonList(List<Lesson> lessonList) {
+        this.lessonList = lessonList;
     }
 
     public String getSid() {
@@ -32,9 +42,10 @@ public class Student {
         this.sname = sname;
     }
 
-    public void run (){
-        System.out.println("学生id"+sid+ "学生name"+sname );
+    public void run() {
+        System.out.println("学生id" + sid + "学生name" + sname);
         System.out.println(teacherMap);
+        System.out.println(lessonList);
     }
 
 
