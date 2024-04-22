@@ -11,17 +11,15 @@ public class TestJdbc{
 
         DriverManager.registerDriver(new Driver());
         Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jeecg-boot","root","root");
-        Statement statement = connection.createStatement();
-        String sql="select * from b_article where create_by= ?";
+        String sql="select * from b_article";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setString(1,"admin");
+      //  preparedStatement.setString(1,"17690181138918031381");
         ResultSet resultSet = preparedStatement.executeQuery();
-        //
-        if(resultSet.next()){
-            System.out.println("查询成功");
-        }else{
-            System.out.println("查询失败");
-        }
+        /**
+         * TODO:
+         *
+         */
+
 
     }
 
